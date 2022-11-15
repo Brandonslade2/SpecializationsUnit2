@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="styles" href="../static/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cupcake Store</title>
+</head>
+<body> 
+    The Cupcake Store:
+    <h1>All of our cupcakes</h1>
+    {% for cupcake in cupcakes %}
+    <h2>{{ cupcake["name"] }}</h2>
+    <h2>Frosting: {{ cupcake["frosting"]}}<</h2>
+    <h2>Cake: {{ cupcake["cake"] }}</h2>
+    <h2>Filling: {{ cupcake["cake"] }}</h2>
+    <h2>Sprinkles: {{ cupcake["sprinkles"] }}</h2>
+    <h3><b>Price: ${{ cupcake["price"] }}</b></h3>
+    <a href="{{ url_for('add_cupcake', name=cupcake['name']) }}">
+        <button>Add to Cart</button>
+    </a>
+    {% endfor %}
+</body>
+</html>

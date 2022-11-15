@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="styles" href="../static/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cupcake Store</title>
+</head>
+<body> 
+    <body>
+        The Cupcake Store:
+        <h1>Your Order</h1>
+        <table>
+            <th>
+                <h5>Cupcake</h5>
+            </th>
+            <th>
+                <h5>Price</h5>
+            </th>
+            <th>
+                <h5>Quantity</h5>
+            </th>
+            {% for cupcake in cupcakes %}
+            <tr>
+                <td>
+                    <h6>{{ cupcake[0] }}</h6>
+                </td>
+                <td>
+                    <h6>Price: {{ cupcake[1] }}</h6>
+                </td>
+                <td>
+                    <h6>Qty: {{ cupcake[2] }}</h6>
+                </td>
+            </tr>
+            {% endfor %}
+            </table>
+</body>
+</body>
+</html>

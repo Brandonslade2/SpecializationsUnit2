@@ -1,0 +1,3 @@
+size,name,price,frosting,cake,filling,sprinkles
+regular,Stars and Stripes,2.99,Vanilla,Vanilla,Vanilla,"['Red', 'White', 'Blue']"
+mini,Oreo,0.99,Chocolate,Cookies and Cream,,['Oreo pieces']
